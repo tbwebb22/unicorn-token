@@ -5,7 +5,6 @@ import "./libraries/BytesLib.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "./uniswap/interfaces/IUniswapV3Pool.sol";
 import "./uniswap/interfaces/IUniswapV3Factory.sol";
-import "hardhat/console.sol";
 
 /// @title A Uniswap token
 /// @author Taylor Webb

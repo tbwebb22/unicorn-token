@@ -57,4 +57,10 @@ describe("Unicorn Token Tests", function () {
 
     expect(liquidityToAdd).to.equal(userLiquidity);
   });
+
+  it("Reverts when an address other than the Uniswap pool attempts to call the callback function", async function () {
+    await expect(
+      unicornToken.uniswapV3MintCallback(1000, 1000, user.address)
+    ).to.be.revertedWith("Can only be called by the Uniswap pool");
+  });
 });
